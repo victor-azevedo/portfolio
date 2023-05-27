@@ -1,7 +1,7 @@
 export const Nav = () => {
   return (
     <nav>
-      <ul className="h-full flex justify-between items-center gap-4 md:gap-8">
+      <ul className="flex flex-col justify-between items-center gap-4 md:flex-row md:gap-8 ">
         <li>Habilidades</li>
         <li>Portfólio</li>
         <li>Experiência</li>
