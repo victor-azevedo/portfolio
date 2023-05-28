@@ -9,14 +9,14 @@ export const SideBar = () => {
   return (
     <>
       <div
-        className={`p-4 transition-opacity duration-500 absolute ${
+        className={`transition-opacity duration-500 absolute ${
           open ? "opacity-0" : "opacity-100"
         }`}
       >
         <FiMenu className="text-2xl" onClick={() => setOpen(true)} />
       </div>
       <div
-        className={`p-4 pr-8 transition-opacity duration-500 absolute right-0 ${
+        className={`pr-8 transition-opacity duration-500 absolute right-0 ${
           open ? "opacity-100" : "opacity-0"
         } `}
       >

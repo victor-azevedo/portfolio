@@ -10,7 +10,7 @@ export const Logo = () => {
         alt="Victor Azevedo logo"
         priority
       />
-      <span className="font-extrabold text-lg">Victor Azevedo</span>
+      <span className="font-extrabold text-lg">Victor</span>
     </div>
   );
 };

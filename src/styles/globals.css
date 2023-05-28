@@ -7,7 +7,11 @@
     font-family: Inter, system-ui, sans-serif;
   }
   main {
-    @apply dark:text-slate-100 text-blackText dark:bg-gray-800 bg-white;
+    @apply dark:bg-gray-800 bg-white;
+    @apply transition-colors duration-1000;
+  }
+  * {
+    @apply dark:text-slate-100 text-blackText;
     @apply transition-colors duration-1000;
   }
 }
