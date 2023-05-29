@@ -2,6 +2,7 @@ import { AboveTitle } from "@/components/AboveTitle";
 import { SideBar } from "@/components/NavBar/SideBar";
 import { TopBar } from "@/components/NavBar/TopBar";
 import { useIsSmallScreen } from "@/hooks/useIsSmallScreen";
+import { SocialNetworks } from "./SocialNetworks";
 
 export const MainSection = () => {
   const isSmallScreen = useIsSmallScreen();
@@ -25,6 +26,7 @@ export const MainSection = () => {
             trabalhar em equipe e adaptar-se a ambientes ágeis de
             desenvolvimento.
           </p>
+          <SocialNetworks />
         </div>
         <div className="flex-grow flex-shrink-0 basis-[320px] min-h-[350px] my-12 ">
           <div className="w-full h-full relative">

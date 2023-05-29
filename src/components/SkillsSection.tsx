@@ -12,6 +12,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+
 import { AboveTitle } from "./AboveTitle";
 import { SectionTitle } from "./SectionTitle";
 import { Skill } from "./Skill";
