@@ -1,7 +1,7 @@
-import { SkillsList, skillsListIcons } from "../../mock/skillsList";
+import { Skills, skillsListIcons } from "../../mock/skillsList";
 
 interface ISkill {
-  name: SkillsList;
+  name: Skills;
 }
 
 export const Skill: React.FC<ISkill> = ({ name }) => {

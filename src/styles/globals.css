@@ -5,6 +5,7 @@
 @layer base {
   html {
     font-family: Inter, system-ui, sans-serif;
+    @apply scroll-smooth;
   }
   main {
     @apply dark:bg-gray-800 bg-white;
@@ -13,5 +14,9 @@
   * {
     @apply dark:text-slate-100 text-blackText;
     @apply transition-colors duration-1000;
+  }
+  svg {
+    @apply text-3xl fill-indigo-500 stroke-blackText;
+    @apply transition-all duration-1000;
   }
 }

@@ -12,7 +12,7 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 
-export type SkillsList = keyof typeof skillsListIcons;
+export type Skills = keyof typeof skillsListIcons;
 
 export const skillsListIcons = {
   Javascript: <SiJavascript className="text-3xl fill-indigo-500" />,
@@ -29,6 +29,4 @@ export const skillsListIcons = {
   MongoDB: <SiMongodb className="text-3xl fill-indigo-500" />,
 };
 
-export const skillsList = Object.keys(
-  skillsListIcons
-) as unknown as SkillsList[];
+export const skillsList = Object.keys(skillsListIcons) as unknown as Skills[];
