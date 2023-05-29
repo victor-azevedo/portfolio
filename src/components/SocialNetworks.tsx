@@ -8,14 +8,14 @@ export const SocialNetworks = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaLinkedin className="text-3xl " />
+        <FaLinkedin className="text-2xl dark:fill-slate-200 fill-blackText  " />
       </a>
       <a
         href="https://github.com/victor-azevedo"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaGithub className="text-3xl " />
+        <FaGithub className="text-2xl dark:fill-slate-200 fill-blackText  " />
       </a>
     </div>
   );

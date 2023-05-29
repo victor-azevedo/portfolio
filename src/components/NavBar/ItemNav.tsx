@@ -1,10 +1,27 @@
 export const Nav = () => {
+  const pageNavigate = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    id: string
+  ) => {
+    e && e.preventDefault();
+    const elementToView = document.getElementById(id);
+    elementToView && elementToView.scrollIntoView();
+  };
+
   return (
     <nav>
       <ul className="flex flex-col justify-between items-center gap-4 md:flex-row md:gap-8 ">
-        <li>Habilidades</li>
+        <li>
+          <a onClick={(e) => pageNavigate(e, "services")} href="#">
+            Serviços
+          </a>
+        </li>
+        <li>
+          <a onClick={(e) => pageNavigate(e, "skills")} href="#">
+            Habilidades
+          </a>
+        </li>
         <li>Portfólio</li>
-        <li>Experiência</li>
       </ul>
     </nav>
   );
