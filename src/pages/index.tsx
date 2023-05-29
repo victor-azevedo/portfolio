@@ -21,12 +21,12 @@ export default function Home({
   const isSmallScreen = useIsSmallScreen();
 
   return (
-    <main className="w-screen min-h-screen px-10 relative">
+    <main className="w-screen md:h-screen  md:min-h-screen px-10 max-w-screen-xl relative m-auto">
       {isSmallScreen ? <SideBar /> : <TopBar />}
       <MainSection />
       <ServicesSection servicesList={servicesList} />
       <SkillsSection skillsList={skillsList} />
-      <Footer />2{" "}
+      <Footer />
     </main>
   );
 }

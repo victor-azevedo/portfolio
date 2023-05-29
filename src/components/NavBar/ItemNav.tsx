@@ -19,7 +19,7 @@ export const Nav = () => {
       <ul className="flex flex-col justify-between items-center gap-4 md:flex-row md:gap-8 ">
         <li>
           <a onClick={(e) => pageNavigate(e, "services")} href="#">
-            Serviços
+            Atuação
           </a>
         </li>
         <li>
