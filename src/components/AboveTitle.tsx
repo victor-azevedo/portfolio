@@ -2,7 +2,7 @@ interface IAboveTitle {
   text: string;
 }
 
-export const AboveTitle = ({ text = "text" }: IAboveTitle) => {
+export const AboveTitle: React.FC<IAboveTitle> = ({ text = "text" }) => {
   return (
     <div className="my-4 inline-flex items-center justify-start gap-4">
       <div className="h-0.5 w-4 bg-zinc-500" />
