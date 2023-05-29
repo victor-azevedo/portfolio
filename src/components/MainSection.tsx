@@ -1,6 +1,4 @@
 import { AboveTitle } from "@/components/AboveTitle";
-import { SideBar } from "@/components/NavBar/SideBar";
-import { TopBar } from "@/components/NavBar/TopBar";
 import { useIsSmallScreen } from "@/hooks/useIsSmallScreen";
 import { SocialNetworks } from "./SocialNetworks";
 
@@ -9,10 +7,7 @@ export const MainSection = () => {
 
   return (
     <section className="w-full min-h-screen">
-      <div className="w-full h-1/5 mx-auto py-4 md:py-8 ">
-        {!isSmallScreen ? <TopBar /> : <SideBar />}
-      </div>
-      <div className="w-full h-4/5 pt-10 flex flex-col md:flex-row gap-8 items-center justify-center">
+      <div className="w-full h-4/5 pt-32 md:pt-10 flex flex-col md:flex-row gap-8 items-center justify-center">
         <div className="flex-grow basis-1/2 flex flex-col justify-center">
           <AboveTitle text="Meu nome é" />
           <h1 className="font-Jakarta text-5xl text-gray-800 font-bold mt-4 tracking-wide dark:text-gray-100">

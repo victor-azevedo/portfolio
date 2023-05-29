@@ -13,6 +13,9 @@
     @apply dark:text-slate-100 text-blackText;
     @apply transition-colors duration-1000;
   }
+  main {
+    @apply transition-opacity duration-500;
+  }
   svg {
     @apply text-3xl fill-indigo-500 stroke-blackText;
     @apply transition-all duration-1000;

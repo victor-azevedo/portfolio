@@ -4,7 +4,7 @@ import { ToggleTheme } from "./ItemToggleTheme";
 
 export const TopBar = () => {
   return (
-    <header className="hidden md:flex w-full justify-between items-center ">
+    <header className="flex w-full justify-between items-center h-1/5 mx-auto  md:py-8  ">
       <Logo />
       <Nav />
       <ToggleTheme />

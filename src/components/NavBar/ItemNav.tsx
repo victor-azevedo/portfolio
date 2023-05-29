@@ -1,4 +1,9 @@
+import { SideBarContext } from "@/contexts/SideBarContext";
+import { useContext } from "react";
+
 export const Nav = () => {
+  const { closeSideBar } = useContext(SideBarContext);
+
   const pageNavigate = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     id: string
@@ -6,6 +11,7 @@ export const Nav = () => {
     e && e.preventDefault();
     const elementToView = document.getElementById(id);
     elementToView && elementToView.scrollIntoView();
+    closeSideBar && closeSideBar();
   };
 
   return (
