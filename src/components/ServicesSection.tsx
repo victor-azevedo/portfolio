@@ -12,12 +12,12 @@ export const ServicesSection: React.FC<IServicesSection> = ({
 }) => {
   return (
     <section
-      className="w-full max-w-screen-xl py-20 flex flex-col justify-center items-center gap-10 scroll-smooth"
+      className="w-full py-20 flex flex-col justify-center items-center gap-10"
       id="services"
     >
       <div className="">
-        <AboveTitle text="Serviços" />
-        <SectionTitle title="Área de Atuação" />
+        <AboveTitle text="Atuação" />
+        <SectionTitle title="Full Stack" />
       </div>
       <div className="flex justify-center items-center gap-12 flex-wrap">
         {servicesList.map((service) => {
