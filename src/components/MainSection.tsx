@@ -1,6 +1,7 @@
 import { AboveTitle } from "@/components/AboveTitle";
 import { useIsSmallScreen } from "@/hooks/useIsSmallScreen";
 import { SocialNetworks } from "./SocialNetworks";
+import Image from "next/image";
 
 export const MainSection = () => {
   const isSmallScreen = useIsSmallScreen();
@@ -24,7 +25,15 @@ export const MainSection = () => {
       <div className="flex-grow flex-shrink-0 basis-[320px] min-h-[350px] my-12 relative ">
         <div className="w-full h-full ">
           <div className="bg-indigo-400 w-[250px] h-[300px] -rotate-[10deg] rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
-          <div className="bg-zinc-200 w-[250px] h-[300px] rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+          <div className="bg-zinc-200 w-[250px] h-[300px] rounded-2xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  overflow-hidden">
+            <Image
+              src="/assets/profile.png"
+              alt="victor azevedo"
+              height={300}
+              width={250}
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
     </section>
