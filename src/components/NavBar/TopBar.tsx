@@ -4,7 +4,7 @@ import { ToggleTheme } from "./ItemToggleTheme";
 
 export const TopBar = () => {
   return (
-    <header className="w-full h-28 px-20 hidden md:flex justify-between items-center fixed z-10 shadow-md animate-fade-down">
+    <header className="w-full h-20 px-20 hidden md:flex justify-between items-center fixed z-10 shadow-md animate-fade-down">
       <Logo />
       <Nav />
       <ToggleTheme />

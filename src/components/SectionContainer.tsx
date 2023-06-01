@@ -16,11 +16,11 @@ export const SectionContainer: React.FC<ISectionContainer> = ({
   return (
     <section
       id={id}
-      className={`w-full md:pt-28 ${
+      className={`w-full md:pt-20 ${
         bgAccent && "bg-zinc-100 dark:bg-gray-700"
       } ${minHScreen && "min-h-screen"}`}
     >
-      <div className="w-full max-w-screen-xl p-20 xl:py-40 m-auto">
+      <div className="w-full max-w-screen-xl p-28 xl:py-40 m-auto">
         {children}
       </div>
     </section>

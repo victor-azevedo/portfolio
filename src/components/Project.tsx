@@ -10,7 +10,7 @@ export const Project: React.FC<ProjectType> = ({
   skills,
 }) => {
   return (
-    <div className="flex-shrink-0 w-[361px] overflow-hidden object-contain rounded-lg border-slate-200 dark:border-slate-700 border-[1px] ">
+    <div className="flex-shrink-0 w-[361px] overflow-hidden object-contain rounded-lg border-slate-200 dark:border-slate-700 border-[1px] hover:animate-pulse hover:animate-once hover:animate-duration-[2000ms] hover:animate-ease-in-out hover:animate-normal">
       <Image src={image} width={361} height={295} alt="project screenshot" />
       <div className="p-6">
         <h6 className="font-Jakarta font-semibold my-2">{title}</h6>

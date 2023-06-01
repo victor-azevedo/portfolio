@@ -13,7 +13,7 @@ export const projectsList = [
     link: "https://victor-dev-mywallet.vercel.app",
     skills: ["React.Js", "Node.Js", "MongoDB"],
   },
-] as const;
+];
 
 export type ProjectsList = typeof projectsList;
 
