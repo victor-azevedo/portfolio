@@ -20,7 +20,7 @@ export const ServicesSection: React.FC<IServicesSection> = ({
       <div className="flex justify-center items-center gap-12 flex-wrap">
         {servicesList.map((service) => {
           return (
-            <div className="basis-1/3" key={service.name}>
+            <div className="md:basis-2/5" key={service.name}>
               <Service
                 name={service.name}
                 description={service.description}
