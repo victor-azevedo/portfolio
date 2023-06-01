@@ -1,5 +1,6 @@
 import { ServicesList } from "../../mock/servicesList";
 import { AboveTitle } from "./AboveTitle";
+import { SectionContainer } from "./SectionContainer";
 import { SectionTitle } from "./SectionTitle";
 import { Service } from "./Service";
 
@@ -11,11 +12,8 @@ export const ServicesSection: React.FC<IServicesSection> = ({
   servicesList,
 }) => {
   return (
-    <section
-      className="w-full py-20 flex flex-col justify-center items-center gap-10"
-      id="services"
-    >
-      <div className="">
+    <div className="w-full flex flex-col justify-center items-center gap-10">
+      <div>
         <AboveTitle text="Atuação" />
         <SectionTitle title="Full Stack" />
       </div>
@@ -32,6 +30,6 @@ export const ServicesSection: React.FC<IServicesSection> = ({
           );
         })}
       </div>
-    </section>
+    </div>
   );
 };

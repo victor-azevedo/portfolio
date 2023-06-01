@@ -8,6 +8,7 @@ import { useIsSmallScreen } from "@/hooks/useIsSmallScreen";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { servicesList } from "../../mock/servicesList";
 import { Skills, skillsList } from "../../mock/skillsList";
+import { SectionContainer } from "@/components/SectionContainer";
 
 export const getStaticProps: GetStaticProps<{
   skillsList: Skills[];
@@ -21,11 +22,17 @@ export default function Home({
   const isSmallScreen = useIsSmallScreen();
 
   return (
-    <main className="w-screen md:h-screen  md:min-h-screen px-10 max-w-screen-xl relative m-auto">
+    <main className="w-screen min-h-screen relative">
       {isSmallScreen ? <SideBar /> : <TopBar />}
-      <MainSection />
-      <ServicesSection servicesList={servicesList} />
-      <SkillsSection skillsList={skillsList} />
+      <SectionContainer id="home" minHScreen>
+        <MainSection />
+      </SectionContainer>
+      <SectionContainer id="services" bgAccent>
+        <ServicesSection servicesList={servicesList} />
+      </SectionContainer>
+      <SectionContainer id="skills">
+        <SkillsSection skillsList={skillsList} />
+      </SectionContainer>
       <Footer />
     </main>
   );
