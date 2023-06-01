@@ -4,16 +4,16 @@ export const servicesList = [
   {
     name: "Front End",
     description:
-      "Desenvolvimento front-end, com expertise em criação de interfaces de usuário interativas e responsivas utilizando tecnologias como React e Next.js. Proficiente em HTML, CSS e JavaScript, e capaz de criar experiências de usuário atraentes e funcionais.",
+      "Desenvolvimento front-end, com expertise  em desenvolvimento de interfaces de usuário interativas e responsivas utilizando tecnologias modernas como <em>React</em> e <em>Next.js</em>. Possuo proficiência em <em>HTML</em>, <em>CSS</em>, <em>JavaScript</em> e <em>Typescript</em>, permitindo a criação de experiências de usuário atrativas e funcionais.",
     icon: <FiLayout className="text-3xl fill-indigo-500 stroke-blackText" />,
   },
   {
     name: "Back End",
     description:
-      "Desenvolvimento front-end, com expertise em criação de interfaces de usuário interativas e responsivas utilizando tecnologias como React e Next.js. Proficiente em HTML, CSS e JavaScript, e capaz de criar experiências de usuário atraentes e funcionais.",
+      "Desenvolvimento back-end, com expertise em criação de <em>API RESTful</em> utilizando tecnologias como <em>Node</em> e <em>Nest.js</em>, com foco no desenvolvimento back-end. Tenho conhecimento em integração com Bancos de Dados <em>SQL</em> e <em>NoSQL</em>, incluindo <em>PostgreSQL</em>, <em>MongoDB</em> e <em>Elasticsearch</em>, garantindo soluções robustas e escaláveis.",
     icon: <FiServer className="text-3xl fill-indigo-500 stroke-blackText" />,
   },
-] as const;
+];
 
 export type ServicesList = typeof servicesList;
 

@@ -17,7 +17,7 @@ export const ServicesSection: React.FC<IServicesSection> = ({
         <AboveTitle text="Atuação" />
         <SectionTitle title="Full Stack" />
       </div>
-      <div className="flex justify-center items-center gap-12 flex-wrap">
+      <div className="flex justify-center items-start gap-12 flex-wrap">
         {servicesList.map((service) => {
           return (
             <div className="md:basis-2/5" key={service.name}>

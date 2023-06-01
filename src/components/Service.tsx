@@ -9,7 +9,10 @@ export const Service: React.FC<IService> = ({ name, icon, description }) => {
       <h5 className="font-Jakarta text-lg font-medium text-center md:min-w-[110px]">
         {name}
       </h5>
-      <p className="text-center md:min-w-[350px]">{description}</p>
+      <p
+        className="text-center md:min-w-[350px]"
+        dangerouslySetInnerHTML={{ __html: description }}
+      />
     </div>
   );
 };
