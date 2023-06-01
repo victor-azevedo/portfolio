@@ -10,7 +10,7 @@ interface ISkillsSection {
 
 export const SkillsSection: React.FC<ISkillsSection> = ({ skillsList }) => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-10">
+    <div className="w-full flex flex-col justify-center items-center gap-16">
       <div className="">
         <AboveTitle text="Habilidades" />
         <SectionTitle title="Especializado em" />

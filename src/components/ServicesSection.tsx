@@ -12,7 +12,7 @@ export const ServicesSection: React.FC<IServicesSection> = ({
   servicesList,
 }) => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-10">
+    <div className="w-full flex flex-col justify-center items-center gap-16">
       <div>
         <AboveTitle text="Atuação" />
         <SectionTitle title="Full Stack" />

@@ -11,8 +11,8 @@ export const ProjectsSection: React.FC<IProjectsSection> = ({
   projectsList,
 }) => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-10">
-      <div>
+    <div className="w-full flex flex-col justify-center items-center gap-16">
+      <div >
         <AboveTitle text="Meus Projetos" />
         <SectionTitle title="Portfólio" />
       </div>
