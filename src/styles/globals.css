@@ -6,13 +6,13 @@
   html {
     font-family: Inter, system-ui, sans-serif;
     @apply scroll-smooth;
+    @apply transition-all duration-1000;
   }
   body,
   header {
     @apply overflow-x-hidden;
     @apply dark:bg-gray-800 bg-white;
     @apply dark:text-slate-100 text-blackText;
-    @apply transition-colors duration-1000;
     @apply animate-duration-700 animate-delay-700;
   }
   main {

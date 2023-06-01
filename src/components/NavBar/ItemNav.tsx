@@ -23,6 +23,11 @@ export const Nav = () => {
           </a>
         </li>
         <li>
+          <a onClick={(e) => pageNavigate(e, "projects")} href="#">
+            Projetos
+          </a>
+        </li>
+        <li>
           <a onClick={(e) => pageNavigate(e, "skills")} href="#">
             Habilidades
           </a>

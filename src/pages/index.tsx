@@ -9,15 +9,19 @@ import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import { servicesList } from "../../mock/servicesList";
 import { Skills, skillsList } from "../../mock/skillsList";
 import { SectionContainer } from "@/components/SectionContainer";
+import { ProjectsSection } from "@/components/ProjectsSection";
+import { ProjectsList, projectsList } from "../../mock/projectsList";
 
 export const getStaticProps: GetStaticProps<{
   skillsList: Skills[];
+  projectsList: ProjectsList;
 }> = () => {
-  return { props: { skillsList } };
+  return { props: { skillsList, projectsList } };
 };
 
 export default function Home({
   skillsList,
+  projectsList,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const isSmallScreen = useIsSmallScreen();
 
@@ -30,7 +34,10 @@ export default function Home({
       <SectionContainer id="services" bgAccent>
         <ServicesSection servicesList={servicesList} />
       </SectionContainer>
-      <SectionContainer id="skills">
+      <SectionContainer id="projects">
+        <ProjectsSection projectsList={projectsList} />
+      </SectionContainer>
+      <SectionContainer id="skills" bgAccent>
         <SkillsSection skillsList={skillsList} />
       </SectionContainer>
       <Footer />
