@@ -32,7 +32,7 @@ export const MainSection = () => {
               alt="Victor Azevedo profile"
               height={300}
               width={250}
-              className="object-contain "
+              className="object-contain animate-fade animate-delay-1000 animate-duration-1000"
             />
           </div>
         </div>
