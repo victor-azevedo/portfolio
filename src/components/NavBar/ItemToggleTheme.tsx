@@ -5,15 +5,15 @@ export const ToggleTheme = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="h-full flex items-center sm:pl-5">
+    <div className="h-full flex items-center sm:pl-5 cursor-pointer">
       {theme === "light" ? (
         <FiMoon
-          className="text-2xl stroke-blackText fill-none"
+          className="text-2xl stroke-blackText fill-none "
           onClick={() => setTheme("dark")}
         />
       ) : (
         <FiSun
-          className="text-2xl dark:stroke-slate-200  fill-none"
+          className="text-2xl dark:stroke-slate-200 fill-none animate-spin animate-duration-[10000ms]"
           onClick={() => setTheme("light")}
         />
       )}

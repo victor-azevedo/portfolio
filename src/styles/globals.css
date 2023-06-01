@@ -13,6 +13,7 @@
     @apply dark:bg-gray-800 bg-white;
     @apply dark:text-slate-100 text-blackText;
     @apply transition-colors duration-1000;
+    @apply animate-duration-700 animate-delay-700;
   }
   main {
     @apply transition-opacity duration-500;

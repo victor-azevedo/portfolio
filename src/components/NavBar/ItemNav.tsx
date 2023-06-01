@@ -27,7 +27,6 @@ export const Nav = () => {
             Habilidades
           </a>
         </li>
-        <li>Portfólio</li>
       </ul>
     </nav>
   );
