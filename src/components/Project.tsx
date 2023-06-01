@@ -11,29 +11,28 @@ export const Project: React.FC<ProjectType> = ({
 }) => {
   return (
     <div className="flex-shrink-0 w-[361px] overflow-hidden object-contain rounded-lg border-slate-200 dark:border-slate-700 border-[1px] hover:scale-105 transition-all duration-1000">
-      <Image
-        src={image}
-        width={361}
-        height={295}
-        alt="project screenshot"
-        className="hover:opacity-40 transition-all duration-1000"
-      />
-      <div className="p-6">
-        <h6 className="font-Jakarta font-semibold my-2">{title}</h6>
-        <div className="flex justify-start items-center gap-2 flex-wrap my-2">
-          {skills.map((skill) => (
-            <span
-              key={skill}
-              className="py-1 px-2 text-[0.725rem] font-light rounded-lg border-slate-200 dark:border-slate-700 border-[1px] "
-            >
-              {skill}
-            </span>
-          ))}
-          <a href={link} target="_blank">
-            <FiLink2 className="text-2xl stroke-blackText dark:stroke-slate-200 fill-none " />
-          </a>
+      <a href={link} target="_blank" className="pr-4">
+        <Image
+          src={image}
+          width={361}
+          height={295}
+          alt="project screenshot"
+          className="hover:opacity-40 transition-all duration-1000"
+        />
+        <div className="py-3 px-6">
+          <h6 className="font-Jakarta font-semibold my-4">{title}</h6>
+          <div className="flex justify-start items-center gap-2 flex-wrap">
+            {skills.map((skill) => (
+              <span
+                key={skill}
+                className="py-1 px-2 text-[0.725rem] font-light rounded-lg border-slate-200 dark:border-slate-700 border-[1px] "
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 };

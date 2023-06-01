@@ -13,7 +13,7 @@ export const SkillsSection: React.FC<ISkillsSection> = ({ skillsList }) => {
     <div className="w-full flex flex-col justify-center items-center gap-16">
       <div className="">
         <AboveTitle text="Habilidades" />
-        <SectionTitle title="Especializado em" />
+        <SectionTitle title="Principais Linguagens e Ferramentas" />
       </div>
       <div className="flex justify-center items-center gap-10 flex-wrap">
         {skillsList.map((skill) => (
