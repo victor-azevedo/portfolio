@@ -12,7 +12,7 @@ export const ProjectsSection: React.FC<IProjectsSection> = ({
 }) => {
   return (
     <div className="w-full flex flex-col justify-center items-center gap-16">
-      <div >
+      <div>
         <AboveTitle text="Meus Projetos" />
         <SectionTitle title="Portfólio" />
       </div>
@@ -23,7 +23,8 @@ export const ProjectsSection: React.FC<IProjectsSection> = ({
               key={project.title}
               title={project.title}
               image={project.image}
-              link={project.link}
+              linkDeploy={project.linkDeploy}
+              linkGithub={project.linkGithub}
               skills={project.skills}
             />
           );
