@@ -33,14 +33,16 @@ export const Project: React.FC<ProjectType> = ({
               </span>
             ))}
           </div>
-          <a
-            href={linkGithub}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="self-end"
-          >
-            <FaGithub className="self-end text-2xl dark:fill-slate-200 fill-blackText hover:scale-125 transition-all duration-500 " />
-          </a>
+          <object>
+            <a
+              href={linkGithub}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="self-end"
+            >
+              <FaGithub className="self-end text-2xl dark:fill-slate-200 fill-blackText hover:scale-125 transition-all duration-500 " />
+            </a>
+          </object>
         </div>
       </a>
     </div>
