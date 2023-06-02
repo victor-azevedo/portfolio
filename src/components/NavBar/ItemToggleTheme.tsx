@@ -1,12 +1,14 @@
+import useHasMounted from "@/hooks/useHasMounted";
 import { useTheme } from "next-themes";
 import { FiMoon, FiSun } from "react-icons/fi";
 
 export const ToggleTheme = () => {
   const { theme, setTheme } = useTheme();
+  const hasMounted = useHasMounted();
 
   return (
     <div className="h-full flex items-center cursor-pointer">
-      {theme === "light" ? (
+      {hasMounted && theme === "light" ? (
         <FiMoon
           className="text-2xl stroke-blackText fill-none "
           onClick={() => setTheme("dark")}
