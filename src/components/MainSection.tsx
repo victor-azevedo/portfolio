@@ -30,9 +30,11 @@ export const MainSection = () => {
             <Image
               src="/assets/profile.png"
               alt="Victor Azevedo profile"
-              height={300}
-              width={250}
-              className="object-contain animate-fade animate-delay-500 animate-duration-1000 animate-ease-in"
+              width="0"
+              height="0"
+              sizes="100vw"
+              priority
+              className="w-full h-auto object-contain animate-fade animate-delay-500 animate-duration-1000 animate-ease-in"
             />
           </div>
         </div>
