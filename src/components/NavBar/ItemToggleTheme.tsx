@@ -5,7 +5,7 @@ export const ToggleTheme = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="h-full flex items-center sm:pl-5 cursor-pointer">
+    <div className="h-full flex items-center cursor-pointer">
       {theme === "light" ? (
         <FiMoon
           className="text-2xl stroke-blackText fill-none "

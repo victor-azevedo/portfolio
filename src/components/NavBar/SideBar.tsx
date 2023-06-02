@@ -4,6 +4,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { Logo } from "./ItemLogo";
 import { Nav } from "./ItemNav";
 import { ToggleTheme } from "./ItemToggleTheme";
+import Resume from "../Resume";
 
 export const SideBar = ({}) => {
   const { sideBarIsOpen, openSideBar, closeSideBar } =
@@ -25,6 +26,7 @@ export const SideBar = ({}) => {
           <ToggleTheme />
         </div>
         <Nav />
+        <Resume />
       </div>
       <div className="relative">
         <div
