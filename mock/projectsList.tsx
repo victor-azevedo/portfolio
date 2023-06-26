@@ -16,6 +16,14 @@ export const projectsList = [
     linkGithub: "https://github.com/victor-azevedo/front-mywallet",
     skills: ["React.Js", "Node.Js", "MongoDB"],
   },
+  {
+    title: "Sweet Kalu",
+    image:
+      "https://repository-images.githubusercontent.com/569517702/5e8b8e07-2706-40bf-8027-853b39eb2fc7",
+    linkDeploy: "https://sweetkalu.vercel.app/",
+    linkGithub: "https://github.com/d3vNano/sweetKaLu-B",
+    skills: ["React.Js", "Node.Js", "Express.Js", "MongoDB"],
+  },
 ];
 
 export type ProjectsList = typeof projectsList;

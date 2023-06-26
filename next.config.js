@@ -9,6 +9,11 @@ const nextConfig = {
         port: "",
         pathname: "/victor-azevedo/**",
       },
+      {
+        protocol: "https",
+        hostname: "repository-images.githubusercontent.com",
+        port: "",
+      },
     ],
   },
 };

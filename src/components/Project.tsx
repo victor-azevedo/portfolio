@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import { FiLink2 } from "react-icons/fi";
-import { Project as ProjectType } from "../../mock/projectsList";
 import { FaGithub } from "react-icons/fa";
+import { Project as ProjectType } from "../../mock/projectsList";
 
 export const Project: React.FC<ProjectType> = ({
   image,
@@ -13,13 +12,17 @@ export const Project: React.FC<ProjectType> = ({
 }) => {
   return (
     <div className="flex-shrink-0 w-[361px] overflow-hidden object-contain rounded-lg border-slate-200 dark:border-slate-700 border-[1px] hover:scale-105 transition-all duration-1000">
-      <a href={linkDeploy} target="_blank" className="pr-4">
+      <a
+        href={linkDeploy}
+        target="_blank"
+        className="min-h-[375px] flex flex-col"
+      >
         <Image
           src={image}
-          width={361}
-          height={295}
+          width={400}
+          height={0}
           alt="project screenshot"
-          className="hover:opacity-40 transition-all duration-1000"
+          className="hover:opacity-40 transition-all duration-1000 flex-1 object-fill"
         />
         <div className="w-full px-4 py-8 inline-flex flex-col items-start justify-center gap-2">
           <h6 className="font-Jakarta font-semibold">{title}</h6>
