@@ -10,7 +10,7 @@ export const servicesList = [
   {
     name: "Back End",
     description:
-      "Desenvolvimento back-end, com expertise em criação de <em>API RESTful</em> utilizando tecnologias como <em>Node</em> e <em>Nest.js</em>, com foco no desenvolvimento back-end. Tenho conhecimento em integração com Bancos de Dados <em>SQL</em> e <em>NoSQL</em>, incluindo <em>PostgreSQL</em>, <em>MongoDB</em> e <em>Elasticsearch</em>, garantindo soluções robustas e escaláveis.",
+      "Desenvolvimento back-end, com expertise em criação de <em>API RESTful</em> utilizando tecnologias como <em>Node</em> e <em>Nest.js</em>, com foco no desenvolvimento back-end, além de Django. Tenho conhecimento em integração com Bancos de Dados <em>SQL</em> e <em>NoSQL</em>, incluindo <em>PostgreSQL</em>, <em>MongoDB</em> e <em>Elasticsearch</em>, garantindo soluções robustas e escaláveis.",
     icon: <FiServer className="text-3xl fill-indigo-500 stroke-blackText" />,
   },
 ];

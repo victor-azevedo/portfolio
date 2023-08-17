@@ -24,6 +24,14 @@ export const projectsList = [
     linkGithub: "https://github.com/d3vNano/sweetKaLu-B",
     skills: ["React.Js", "Node.Js", "Express.Js", "MongoDB"],
   },
+  {
+    title: "MedicalSys",
+    image:
+      "https://raw.githubusercontent.com/victor-azevedo/portfolio/main/doc/login_page.png",
+    linkDeploy: "https://medicalsys.up.railway.app//",
+    linkGithub: "https://github.com/victor-azevedo/medicalsys",
+    skills: ["Python", "Django", "Bootstrap"],
+  },
 ];
 
 export type ProjectsList = typeof projectsList;
