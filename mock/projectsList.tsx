@@ -28,7 +28,7 @@ export const projectsList = [
     title: "MedicalSys",
     image:
       "https://raw.githubusercontent.com/victor-azevedo/portfolio/main/doc/login_page.png",
-    linkDeploy: "https://medicalsys.up.railway.app//",
+    linkDeploy: "https://medicalsys.up.railway.app/",
     linkGithub: "https://github.com/victor-azevedo/medicalsys",
     skills: ["Python", "Django", "Bootstrap"],
   },
